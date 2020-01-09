@@ -1,7 +1,7 @@
 # openweather-API
 School assignment of how to use JSON and extract data from openweathermap.org
 
-NOTE: API key from OpenWeather is missing, because I took it away from the code. Get a specific API key from openweathermap.org
+NOTE: API key from OpenWeather is currently missing. Get a specific API key from openweathermap.org
 
 Original assignment:
 - parse the JSON data and output it to div.
