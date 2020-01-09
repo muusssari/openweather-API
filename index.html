@@ -1,0 +1,39 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Openweather API</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap">
+
+</head>
+<body>
+<main>
+  <h1>Assignment: OpenWeather API</h1>
+
+<p>OpenWeatherMap is a well known weather data provider online. It offers an API which allow developers to fetch data about weather. The <a href="https://openweathermap.org/api">documentation can be found here</a>.
+Your task is to write a Weather APP, which will display the weather information based on the users wishes. <b>Notice, that you will need to sign up (its free) to get the API key, which allows you to use the service.</b></p>
+
+<li>First develop the app to display raw weather information (Temperature, Clouds, Humidity, Icon) on one spesific city, when the button is clicked. <button class="btn" onclick="loadWeatherData()">Get data</button> </li>
+<li>When you achieve this, then parse the data and output it to div</li>
+<li>When you have achieved this, implement an onchange-event on the pulldown menu, which will allow the user to select which city's data will be shown from a list of cities</li>
+<li>When you have completed this, add functionality to an input field, in which the user can write search queries which are sent to the OpenWeatherMap API and the system will run a search query which is retuned to your app.</li>
+  <p>Select a city from the list:
+  <select name="mySelect" id="city" onchange="setCity()">
+    <option value="Helsinki">Helsinki</option>
+    <option value="Stockholm">Stockholm</option>
+    <option value="Rome">Rome</option>
+	<option value="Bangkok">Bangkok</option>
+    <option value="New York" selected>New York</option>
+  </select>
+<br/>
+Or type in a search query: <input id="citysearch" value="New York"></input><button class="btn" onclick="loadCityData()">Search</button>
+<div id="weatherdata">--- WEATHERDATA GOES HERE ---</div>
+</main>
+<script src="main.js"></script>
+</body>
+</html>
